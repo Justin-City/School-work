@@ -1,0 +1,43 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "pnpm install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "start": {
+      "name": "start",
+      "command": "pnpm start",
+      "runAtStart": true
+    },
+    "build:dev": {
+      "name": "build:dev",
+      "command": "pnpm build:dev",
+      "runAtStart": false
+    },
+    "build:prod": {
+      "name": "build:prod",
+      "command": "pnpm build:prod",
+      "runAtStart": false
+    },
+    "build": {
+      "name": "build",
+      "command": "pnpm build",
+      "runAtStart": false
+    },
+    "webpack": {
+      "name": "webpack",
+      "command": "pnpm webpack",
+      "runAtStart": false
+    },
+    "release": {
+      "name": "release",
+      "command": "pnpm release",
+      "runAtStart": false
+    }
+  }
+}
